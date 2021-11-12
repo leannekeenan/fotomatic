@@ -1,0 +1,316 @@
+
+*{
+    box-sizing: border-box;
+  }
+  
+  body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+  }
+  
+  .navbar{
+    /*Sets navbar items next to each other*/
+    display: flex;
+    /*flexes the navbar objects as far away from each other on the screen*/
+    justify-content: space-between;
+    /*aligns items to have text / logos in line with each other*/
+    align-items: center;
+    /*provides 5% padding on the left and right.  provides 2% on top and bottom*/
+    /*padding: 0 3%;*/
+    background-color: rgb(74, 74, 74);
+    color: rgb(166, 236, 160);
+    width: 100%;
+    margin: 0;
+    padding: 0 3%;
+ 
+  }
+  
+  .logo{
+    color: rgb(166, 256, 160);
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 2rem;
+  }
+  
+  .navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-links li{
+    list-style: none;
+  }
+  
+  .navbar-links li a{
+    text-decoration: none;
+    color:  rgb(166, 236, 160);
+    padding: 1.5rem;
+    display: block;
+    font-size: 1.25rem;
+
+  }
+
+  .navbar-links li:hover{
+      background-color: rgb(166, 236, 160);
+      border-radius: 5%;
+      box-shadow: 2px 2px 2px 2px rgba(245, 242, 242, 0.904);
+  }
+
+  .navbar-links li a:hover{
+    color:rgb(74, 74, 74);
+  }
+
+  .burger{
+      position: absolute;
+      top: 1.5%;
+      right: 1rem;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+  }
+
+  .burger .bar{
+      height: 3px;
+      width: 100%;
+      background-color: rgb(166, 236, 160);
+      border-radius: 10px;
+  }
+/* end navbar*/
+
+  .instant{
+    font-family: 'Dancing Script', cursive;
+    font-size: 6rem;
+    color: rgb(251, 253, 251);
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin: 0;
+    text-shadow: 4px 4px rgba(39, 61, 37, 0.2);
+   
+  }
+
+  .format-camera{
+      font-family: 'Mukta', sans-serif;
+      font-size: 2.5rem;
+      color:rgb(74, 74, 74);
+      text-shadow: none;
+      font-weight: bold;
+  }
+
+  #landing{
+      background-image: url("https://i.ibb.co/QmwVvTP/fotomatic-banner.jpg");
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      background-position: bottom;
+      padding: 3%;
+  }
+
+  .landing-content{
+    background-color:rgba(166, 236, 160, .7);
+    text-align: center;
+    width: 93vw;
+    height: 60vh;
+    display: block;
+    border-radius: 3%;
+  }
+
+  .landing-content .headline{
+    margin: 5%;
+    font-size: 1.25rem;
+    padding: 0px 50px 50px;
+  }
+
+  .landing-content .join{
+    height: 50px;
+    width: 275px;
+    font-size: 1.05rem;
+    border-radius: 10px;
+    box-shadow: rgb(166, 236, 160);
+    cursor: pointer;
+    background-color:rgb(74, 74, 74);
+    color: rgba(236, 238, 241);
+   
+  }
+/*End Landing*/
+
+/*Product*/
+ #product{
+   background-color: rgba(219, 216, 216, 0.966);
+   text-align: center;
+   justify-content: center;
+   margin: 0;
+   display: grid;
+   column-gap: 20px;
+   grid-template-columns: 500px 500px;
+   padding: 5%;
+   
+ }
+ .card{
+   background-color:rgba(236, 238, 241, 0.966);
+   width: 100%;
+   display: block;
+   padding: 5%;
+   margin-bottom: 4%;
+   border: .5px solid black;
+   box-shadow: 4px rgb(166, 236, 160);
+ }
+
+ .card img{
+   height: 275px;
+   border: 2px solid black;
+ }
+
+ .card h3{
+   font-size: 1.75rem;
+ }
+/*end product*/
+
+/*about*/
+#about{
+  background-color: rgb(74, 74, 74);
+  color: rgb(238, 238, 238);
+  padding-top: 2%;
+  column-gap: 5px;
+  grid-template-columns: 250px 250px;
+  display: block;
+}
+
+#about h2{
+  text-align: center;
+  font-size: 2rem;
+}
+
+#about h4{
+  text-align: center;
+  margin: 0 5%;
+  font-size: 1.15rem;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.filter-images{
+  display: grid;
+  grid-auto-flow: column;
+  margin: 0;
+  padding: 5% 0;
+  align-content: center;
+  justify-content: center;
+}
+
+.filter{
+   margin: 0;
+   padding: 0;
+   height: 225px;
+}
+/*end about*/
+
+/*quote*/
+#quote h2{
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.photography-society{
+  display: block;
+  margin: auto;
+  height: 50px;
+  padding-top: 15px;
+}
+/*end quote*/
+
+/*footer*/
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 5%;
+  background-color:rgba(141, 142, 143, 0.966);
+  color: rgb(238, 238, 238);
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+@media(max-width: 480px){
+  .filter{
+    height: 110px;
+  }
+}
+
+@media (max-width: 690px){
+      .burger{
+          display: flex;
+          margin: 2rem;
+      }
+      .navbar-links{
+          display: none;
+          width: 100%;
+      }
+
+      .navbar{
+          width: 100%;
+          flex-direction: column;
+          align-items: flex-start;
+      }
+
+      .navbar-links ul{
+          flex-direction: column;
+          width: 100%;
+          padding-bottom: 10px;
+      }
+
+      .navbar-links li{
+          text-align: center;
+      }
+
+      .navbar-links li a{
+          padding: .75rem 1rem;
+      }
+      .navbar-links.active{
+          display: flex;
+      }
+
+      .landing-content{
+        background-color:rgba(166, 236, 160, .7);
+        text-align: center;
+        width: 80vw;
+        height: 60vh;
+        display: block;
+        margin: auto;
+        border-radius: 3%;
+        padding-top: 15%;
+      }
+
+      #product{
+        margin: 0;
+        padding: 5%; 
+        display: block;
+      }
+    
+      .filter{
+        margin: 0;
+        padding: 0;
+      }
+
+  }
+
+
+@media(max-width: 1024px){
+
+  
+
+  #product{
+    margin: 0;
+    padding: 5%; 
+    display: block;
+  }
+
+  .filter{
+    height: 110px;
+  }
+}
